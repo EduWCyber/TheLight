@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Light Education</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="education-page">
+
+<div class="light"></div>
+<div class="page-glow page-glow-one"></div>
+<div class="page-glow page-glow-two"></div>
+
+<nav class="navbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">
+      <img src="LoGo.png" alt="The Light logo">
+    </span>
+    <span class="brand-text">
+      <strong>The Light</strong>
+      <small>St. Andrew's School</small>
+    </span>
+  </a>
+
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-links" id="site-menu">
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="tools.html">Tools</a>
+  </div>
+  <a class="nav-cta" href="tools.html">Open Tools</a>
+</nav>
+
+<main class="education-main">
+  <section class="education-hero reveal">
+    <div class="education-hero-copy">
+      <span class="eyebrow">Teen guide to safer online spaces</span>
+      <h1>Learn. Recognize. Respond.</h1>
+      <p class="education-hero-subtitle">Understanding bullying and cyberbullying is the first step toward safer online spaces.</p>
+
+      <div class="education-hero-actions">
+        <a class="button button-primary" href="#topics">Explore Topics</a>
+        <a class="button button-secondary education-secondary" href="tools.html">Try Support Tools</a>
+      </div>
+    </div>
+
+    <aside class="education-hero-panel reveal delay-2">
+      <div class="education-panel-top">
+        <span class="education-panel-label">Quick reminder</span>
+        <strong>Feeling safe online should not be complicated.</strong>
+      </div>
+
+      <div class="education-panel-points">
+        <div class="education-mini-card">
+          <span class="education-mini-dot coral"></span>
+          Harm online can be emotional, public, and fast-moving.
+        </div>
+        <div class="education-mini-card">
+          <span class="education-mini-dot blue"></span>
+          Knowing the warning signs helps teens step in earlier.
+        </div>
+        <div class="education-mini-card">
+          <span class="education-mini-dot mint"></span>
+          Good support starts with calm responses and trusted adults.
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="education-topic-section" id="topics">
+    <div class="education-topic-layout">
+      <aside class="education-topic-panel reveal">
+        <div class="education-topic-panel-head">
+          <span class="education-topic-panel-label">Subjects</span>
+          <h3>Explore the guide</h3>
+          <p>Each subject stays fully visible, and hovering adds a little motion before you open the full guide below.</p>
+        </div>
+
+        <div class="education-topic-grid" aria-label="Education subjects">
+          <button class="education-topic-card reveal delay-2" type="button" aria-label="What is Bullying?" data-topic-id="what-is-bullying" data-topic-theme="blue" data-topic-kicker="What is Bullying?" data-topic-title="Recognize when repeated harm becomes bullying." data-topic-lead="Bullying is usually repeated, intentional, and shaped by a power imbalance." data-topic-description="This subject explains what bullying actually means, why repetition matters, and how naming the pattern can help someone get support sooner." data-topic-advice-template="topic-advice-what-is-bullying" data-topic-facts-template="topic-facts-what-is-bullying">
+            <span class="education-topic-icon blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">What is Bullying?</span>
+          </button>
+
+          <button class="education-topic-card reveal delay-3" type="button" aria-label="Cyberbullying" data-topic-id="types-of-cyberbullying" data-topic-theme="lavender" data-topic-kicker="Types of Cyberbullying" data-topic-title="See the different forms cyberbullying can take." data-topic-lead="Cyberbullying happens through digital devices like phones, computers, and tablets, including social media, messaging, forums, and gaming spaces." data-topic-description="It includes sending, posting, or sharing harmful, false, mean, or humiliating content, and sometimes exposing private information to embarrass someone." data-topic-advice-template="topic-advice-types-of-cyberbullying" data-topic-facts-template="topic-facts-types-of-cyberbullying">
+            <span class="education-topic-icon lavender" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="4" width="14" height="12" rx="3"></rect>
+                <path d="M9 20h6"></path>
+                <path d="M12 16v4"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">What is Cyberbullying</span>
+          </button>
+
+          <button class="education-topic-card reveal delay-4" type="button" aria-label="Why People Bully" data-topic-id="why-people-bully" data-topic-theme="teal" data-topic-kicker="Why People Bully" data-topic-title="Understand some of the reasons bullying behavior can happen." data-topic-lead="Bullying behavior can be shaped by peer pressure, insecurity, family stress, emotional struggles, and school environments." data-topic-description="Knowing why bullying happens does not excuse it, but it can help adults and students respond in smarter, more supportive ways." data-topic-advice-template="topic-advice-why-people-bully" data-topic-facts-template="topic-facts-why-people-bully">
+            <span class="education-topic-icon mint" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 4v16"></path>
+                <path d="M8 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4"></path>
+                <path d="M8 16c0 2.2 1.8 4 4 4s4-1.8 4-4"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">Why People Bully</span>
+          </button>
+
+          <button class="education-topic-card reveal delay-5" type="button" aria-label="Types of Bullying" data-topic-id="types-of-bullying" data-topic-theme="blue" data-topic-kicker="Types of Bullying" data-topic-title="Learn the main forms bullying can take." data-topic-lead="Bullying can be physical, verbal, social, or digital, and it is often easier to stop when people can recognize the pattern clearly." data-topic-description="This subject helps students identify common types of bullying so the harm is easier to notice and name." data-topic-advice-template="topic-advice-types-of-bullying" data-topic-facts-template="topic-facts-types-of-bullying">
+            <span class="education-topic-icon blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 7h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 17h10"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">Types of Bullying</span>
+          </button>
+
+          <button class="education-topic-card reveal delay-6" type="button" aria-label="Warning Signs" data-topic-id="warning-signs" data-topic-theme="coral" data-topic-kicker="Warning Signs" data-topic-title="Spot warning signs before things get worse." data-topic-lead="People being targeted do not always say it directly, so changes in mood and habits matter." data-topic-description="This subject helps you notice emotional, social, and digital signs that may show someone is being targeted or feeling unsafe online." data-topic-advice-template="topic-advice-warning-signs" data-topic-facts-template="topic-facts-warning-signs">
+            <span class="education-topic-icon coral" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 9v4"></path>
+                <path d="M12 17h.01"></path>
+                <path d="M10.3 4.7 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 4.7a2 2 0 0 0-3.4 0Z"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">Warning Signs</span>
+          </button>
+
+          <button class="education-topic-card reveal delay-7" type="button" aria-label="How to Respond" data-topic-id="how-to-respond" data-topic-theme="mint" data-topic-kicker="How to Respond" data-topic-title="Choose a response that protects your peace." data-topic-lead="The safest response is usually calm, brief, and focused on protecting yourself." data-topic-description="This subject covers what to do when a message feels hostile, including when to stop replying, how to save evidence, and when to report or tell an adult." data-topic-advice-template="topic-advice-how-to-respond" data-topic-facts-template="topic-facts-how-to-respond">
+            <span class="education-topic-icon mint" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 12h8"></path>
+                <path d="M12 8v8"></path>
+                <path d="M4 12a8 8 0 1 1 8 8"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">How to Respond</span>
+          </button>
+
+          <button class="education-topic-card reveal delay-7" type="button" aria-label="Effects of Bullying" data-topic-id="effects-of-bullying" data-topic-theme="lavender" data-topic-kicker="Effects of Bullying" data-topic-title="See why bullying can have serious lasting impact." data-topic-lead="Bullying can affect emotions, mental health, school performance, friendships, and a person's sense of safety." data-topic-description="This subject makes the impact of bullying feel more real by showing how it can affect daily life, confidence, and academic focus." data-topic-advice-template="topic-advice-effects-of-bullying" data-topic-facts-template="topic-facts-effects-of-bullying">
+            <span class="education-topic-icon lavender" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 21a8 8 0 1 0-8-8"></path>
+                <path d="M12 7v5l3 3"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">Effects of Bullying</span>
+          </button>
+
+          <button class="education-topic-card reveal delay-7" type="button" aria-label="Help a Friend" data-topic-id="help-a-friend" data-topic-theme="teal" data-topic-kicker="Help a Friend" data-topic-title="Support a friend without adding pressure." data-topic-lead="Support should feel calm, private, and centered on what your friend needs most." data-topic-description="This subject focuses on listening well, protecting privacy, and helping a friend take the next step without taking over the situation." data-topic-advice-template="topic-advice-help-a-friend" data-topic-facts-template="topic-facts-help-a-friend">
+            <span class="education-topic-icon blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path>
+                <circle cx="10" cy="7" r="4"></circle>
+                <path d="M21 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">Help a Friend</span>
+          </button>
+
+          <button class="education-topic-card reveal delay-7" type="button" aria-label="Online Safety Tips" data-topic-id="online-safety-tips" data-topic-theme="gold" data-topic-kicker="Online Safety Tips" data-topic-title="Build habits that make online spaces safer." data-topic-lead="Small digital habits can protect privacy, reduce risk, and make support easier when needed." data-topic-description="This subject focuses on everyday privacy and safety habits that help you stay more in control online." data-topic-advice-template="topic-advice-online-safety-tips" data-topic-facts-template="topic-facts-online-safety-tips">
+            <span class="education-topic-icon lavender" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3 4 7v5c0 5 3.4 8.6 8 9 4.6-.4 8-4 8-9V7l-8-4Z"></path>
+                <path d="m9.5 12 1.7 1.7 3.3-3.7"></path>
+              </svg>
+            </span>
+            <span class="education-topic-name">Online Safety Tips</span>
+          </button>
+        </div>
+      </aside>
+
+      <article class="education-topic-viewer reveal delay-1" aria-live="polite">
+        <div class="education-topic-empty" id="educationTopicEmpty">
+          <span class="education-topic-detail-kicker">Choose a subject</span>
+          <h2>Select a topic above.</h2>
+          <p>The full advice and facts for that subject will appear below the subject selector.</p>
+        </div>
+
+        <div class="education-topic-content" id="educationTopicContent" hidden>
+          <span class="education-topic-detail-kicker" id="educationTopicKicker">Subject focus</span>
+          <h2 id="educationTopicTitle"></h2>
+          <p class="education-info-lead" id="educationTopicLead"></p>
+          <p id="educationTopicDescription"></p>
+
+          <div class="education-detail-grid">
+            <div class="education-detail-panel">
+              <span class="education-detail-label">Advice</span>
+              <div id="educationTopicAdvice"></div>
+            </div>
+            <div class="education-detail-panel">
+              <span class="education-detail-label">Facts</span>
+              <div id="educationTopicFacts"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="education-topic-templates" hidden>
+      <template id="topic-advice-what-is-bullying">
+        <ul class="education-bullet-list">
+          <li>Trust your discomfort if the same person keeps targeting someone.</li>
+          <li>Talk to a trusted adult early instead of waiting for it to grow.</li>
+          <li>Do not excuse repeated harm as "just joking" if it keeps hurting someone.</li>
+        </ul>
+      </template>
+      <template id="topic-facts-what-is-bullying">
+        <ul class="education-facts-list">
+          <li><strong>Definition:</strong> Bullying is when people use words or actions on purpose to hurt an individual or a group, either physically, socially, psychologically, or over the internet. They repeat this behavior again and again and often want the person or group to feel less powerful or helpless.</li>
+          <li><strong>Repeated:</strong> It keeps happening or threatens to continue.</li>
+          <li><strong>Intentional:</strong> The behavior is meant to hurt, shame, or control.</li>
+          <li><strong>Imbalance:</strong> One person has more social, physical, or digital power.</li>
+          <li><strong>Common reality:</strong> 1 in 5 students reported being bullied in NCES 2022 data.</li>
+        </ul>
+      </template>
+
+      <template id="topic-advice-types-of-cyberbullying">
+        <ul class="education-bullet-list">
+          <li>Do not reshare harmful posts, screenshots, or private content.</li>
+          <li>Mute, block, or leave spaces that are becoming abusive.</li>
+          <li>Save proof before harmful content is deleted or edited.</li>
+        </ul>
+      </template>
+      <template id="topic-facts-types-of-cyberbullying">
+        <ul class="education-facts-list">
+          <li><strong>Definition:</strong> Cyberbullying is bullying that takes place over digital devices like cell phones, computers, and tablets.</li>
+          <li><strong>What it includes:</strong> It can involve sending, posting, or sharing negative, harmful, false, or mean content about someone else.</li>
+          <li><strong>Private information:</strong> Sharing someone's personal or private information can cause embarrassment or humiliation.</li>
+          <li><strong>Common places:</strong> Social media, text messaging, direct messages, online chats, forums, email, and gaming communities are some of the most common spaces.</li>
+          <li><strong>Harassment:</strong> Repeated cruel messages or comments.</li>
+          <li><strong>Exclusion:</strong> Leaving someone out on purpose to isolate them.</li>
+          <li><strong>Impersonation:</strong> Fake accounts or pretending to be someone else.</li>
+          <li><strong>Exposure:</strong> Sharing private photos, secrets, or humiliating content.</li>
+          <li><strong>Recent trend:</strong> Patchin and Hinduja reported 26.5% of students experienced cyberbullying in the previous 30 days in 2024.</li>
+        </ul>
+      </template>
+
+      <template id="topic-advice-why-people-bully">
+        <ul class="education-bullet-list">
+          <li>Try to understand the behavior without excusing the harm it causes.</li>
+          <li>Get support from trusted adults, teachers, or counselors early if harmful behavior keeps repeating.</li>
+          <li>Remember that bullying is a behavior that can be changed with support and accountability.</li>
+        </ul>
+      </template>
+      <template id="topic-facts-why-people-bully">
+        <ul class="education-facts-list">
+          <li><strong>Peer pressure:</strong> Some young people bully to gain status, fit in, or control who belongs in a group.</li>
+          <li><strong>Family stress:</strong> Aggression, poor communication, or low support at home can influence behavior.</li>
+          <li><strong>Emotional struggle:</strong> Insecurity, low self-esteem, poor emotional control, or having been bullied can all play a part.</li>
+          <li><strong>School environment:</strong> Bullying can grow more easily where conduct problems are not addressed well.</li>
+        </ul>
+      </template>
+
+      <template id="topic-advice-types-of-bullying">
+        <ul class="education-bullet-list">
+          <li>Name the kind of bullying you see, because clear words make it easier to explain and report.</li>
+          <li>Remember that not all bullying looks physical; social and verbal harm can be serious too.</li>
+          <li>Pay attention when behavior is repeated and meant to embarrass, exclude, or control someone.</li>
+        </ul>
+      </template>
+      <template id="topic-facts-types-of-bullying">
+        <ul class="education-facts-list">
+          <li><strong>Physical:</strong> Hitting, pushing, tripping, damaging belongings, or other physical intimidation.</li>
+          <li><strong>Verbal:</strong> Name-calling, threats, insults, or repeated cruel comments.</li>
+          <li><strong>Social:</strong> Excluding someone, spreading rumors, or trying to damage relationships and reputation.</li>
+          <li><strong>Cyber:</strong> Harm through messages, posts, apps, chats, or digital sharing.</li>
+        </ul>
+      </template>
+
+      <template id="topic-advice-warning-signs">
+        <ul class="education-bullet-list">
+          <li>Check in gently instead of demanding an explanation.</li>
+          <li>Ask open questions like "Do you want to talk about what happened online?"</li>
+          <li>Take small signs seriously if they appear repeatedly.</li>
+        </ul>
+      </template>
+      <template id="topic-facts-warning-signs">
+        <ul class="education-facts-list">
+          <li><strong>Emotional:</strong> Sudden sadness, anger, anxiety, or fear after being online.</li>
+          <li><strong>Social:</strong> Pulling away from friends, activities, or group chats.</li>
+          <li><strong>Digital:</strong> Hiding screens, deleting apps, or panicking at notifications.</li>
+          <li><strong>At school or home:</strong> Unexplained injuries, lost belongings, headaches, stomach aches, nightmares, or avoiding school can also be warning signs.</li>
+          <li><strong>Impact:</strong> Students often report the strongest effects on self-esteem, schoolwork, and relationships.</li>
+        </ul>
+      </template>
+
+      <template id="topic-advice-how-to-respond">
+        <ol class="education-step-list">
+          <li>Do not reply when emotions are running high.</li>
+          <li>Take screenshots and save messages as evidence.</li>
+          <li>Block, mute, or report the account when needed.</li>
+          <li>Tell a trusted adult, teacher, counselor, or caregiver.</li>
+        </ol>
+      </template>
+      <template id="topic-facts-how-to-respond">
+        <ul class="education-facts-list">
+          <li><strong>What not to do:</strong> Do not fight back physically, and do not keep arguing online if the harm is continuing.</li>
+          <li><strong>Short replies:</strong> Brief boundaries are usually safer than long arguments.</li>
+          <li><strong>Evidence:</strong> Screenshots matter because online content can disappear fast.</li>
+          <li><strong>Reporting help:</strong> Teachers, parents, counselors, and platform reporting tools can all be part of getting help.</li>
+          <li><strong>Speaking up matters:</strong> NCES reported 44.2% of students notified a trusted adult about bullying.</li>
+        </ul>
+      </template>
+
+      <template id="topic-advice-effects-of-bullying">
+        <ul class="education-bullet-list">
+          <li>Take the effects seriously even if the bullying seems "small" to other people.</li>
+          <li>Encourage support early when bullying starts affecting mood, sleep, friendships, or schoolwork.</li>
+          <li>Remind people that healing and confidence can come back with support.</li>
+        </ul>
+      </template>
+      <template id="topic-facts-effects-of-bullying">
+        <ul class="education-facts-list">
+          <li><strong>Emotional:</strong> Bullying can lead to shame, fear, sadness, anger, and lower self-esteem.</li>
+          <li><strong>Mental health:</strong> It can increase anxiety, stress, and feelings of isolation.</li>
+          <li><strong>Academic:</strong> It can affect concentration, school attendance, motivation, and grades.</li>
+          <li><strong>Real-life impact:</strong> The effects can continue into friendships, daily habits, and long-term well-being.</li>
+        </ul>
+      </template>
+
+      <template id="topic-advice-help-a-friend">
+        <ul class="education-bullet-list">
+          <li>Listen without blaming them or asking why they "didn't ignore it."</li>
+          <li>Ask what kind of support they want before taking action.</li>
+          <li>Offer to sit with them while they save evidence or tell an adult.</li>
+        </ul>
+      </template>
+      <template id="topic-facts-help-a-friend">
+        <ul class="education-facts-list">
+          <li><strong>Validation matters:</strong> Feeling believed can reduce shame and isolation.</li>
+          <li><strong>Privacy matters:</strong> Do not share their story without permission unless safety is at risk.</li>
+          <li><strong>Helpful phrase:</strong> "I'm here with you. We can figure out the next step together."</li>
+        </ul>
+      </template>
+
+      <template id="topic-advice-online-safety-tips">
+        <ul class="education-bullet-list">
+          <li>Review privacy settings regularly.</li>
+          <li>Think before posting or sharing screenshots.</li>
+          <li>Use strong passwords and keep accounts secure.</li>
+          <li>Stay with people and communities that feel respectful.</li>
+        </ul>
+      </template>
+      <template id="topic-facts-online-safety-tips">
+        <ul class="education-facts-list">
+          <li><strong>Settings drift:</strong> App updates can change privacy defaults over time.</li>
+          <li><strong>Digital footprints:</strong> Screenshots and reposts can outlast the original post.</li>
+          <li><strong>Boundaries help:</strong> Curating who can contact you can lower exposure to harm.</li>
+          <li><strong>Online spaces matter:</strong> 9 out of 10 tweens use social media or gaming apps, so safety habits make a real difference.</li>
+        </ul>
+      </template>
+    </div>
+  </section>
+
+  <section class="education-info-card reveal delay-1" aria-labelledby="education-stats-heading">
+    <span class="education-info-kicker blue">By the numbers</span>
+    <h2 id="education-stats-heading">A few facts worth remembering.</h2>
+    <p class="education-info-lead">Bullying and cyberbullying affect a lot of young people, and the impact can reach emotions, schoolwork, friendships, and daily safety.</p>
+
+    <div class="education-stats-showcase">
+      <div class="education-signal-grid education-signal-grid-animated">
+        <div class="education-signal-card education-stat-card">
+          <span class="education-stat-label">Bullied at school</span>
+          <strong class="education-stat-number" data-target="19.2" data-suffix="%">0%</strong>
+          <p>About 1 in 5 students reported being bullied, according to NCES 2022 data.</p>
+        </div>
+        <div class="education-signal-card education-stat-card">
+          <span class="education-stat-label">Online or by text</span>
+          <strong class="education-stat-number" data-target="21.6" data-suffix="%">0%</strong>
+          <p>Among students ages 12 to 18 who were bullied during school, 21.6% said it also happened online or by text.</p>
+        </div>
+        <div class="education-signal-card education-stat-card">
+          <span class="education-stat-label">Told a trusted adult</span>
+          <strong class="education-stat-number" data-target="44.2" data-suffix="%">0%</strong>
+          <p>Many students do reach out for help, but the number also shows plenty may still be carrying it alone.</p>
+        </div>
+      </div>
+
+      <div class="education-data-visual reveal delay-2">
+        <div class="education-donut-panel">
+          <div class="education-donut-chart" data-chart-progress="1" aria-hidden="true">
+            <div class="education-donut-center">
+              <span>Most common place</span>
+              <strong>Classroom</strong>
+            </div>
+          </div>
+          <div class="education-donut-legend">
+            <div class="education-donut-legend-item">
+              <span class="legend-dot blue"></span>
+              Classroom 39%
+            </div>
+            <div class="education-donut-legend-item">
+              <span class="legend-dot lavender"></span>
+              Hallway 37.5%
+            </div>
+            <div class="education-donut-legend-item">
+              <span class="legend-dot coral"></span>
+              Cafeteria 25.1%
+            </div>
+            <div class="education-donut-legend-item">
+              <span class="legend-dot mint"></span>
+              Outside 24.4%
+            </div>
+          </div>
+        </div>
+
+        <div class="education-comparison-card">
+          <div class="education-comparison-head">
+            <span class="education-stat-label">Quick comparisons</span>
+            <strong>Who reports more?</strong>
+          </div>
+
+          <div class="education-comparison-row">
+            <div class="education-comparison-copy">
+              <span>Middle school students</span>
+              <strong class="education-stat-number" data-target="26.1" data-suffix="%">0%</strong>
+            </div>
+            <div class="education-comparison-track">
+              <span class="education-comparison-fill blue" data-width="26.1%"></span>
+            </div>
+          </div>
+
+          <div class="education-comparison-row">
+            <div class="education-comparison-copy">
+              <span>High school students</span>
+              <strong class="education-stat-number" data-target="14.6" data-suffix="%">0%</strong>
+            </div>
+            <div class="education-comparison-track">
+              <span class="education-comparison-fill lavender" data-width="14.6%"></span>
+            </div>
+          </div>
+
+          <div class="education-comparison-row">
+            <div class="education-comparison-copy">
+              <span>Think it will happen again</span>
+              <strong class="education-stat-number" data-target="41.3" data-suffix="%">0%</strong>
+            </div>
+            <div class="education-comparison-track">
+              <span class="education-comparison-fill coral" data-width="41.3%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-chip-row" aria-label="Quick bullying statistics">
+        <div class="education-chip">Rumor spreading (13.0%) and name-calling (11.9%) were among the most common forms reported.</div>
+        <div class="education-chip">Girls report cyberbullying more often in lifetime data, while boys report more threats of physical harm online.</div>
+        <div class="education-chip">Students often say bullying affects self-esteem, schoolwork, and relationships the most.</div>
+      </div>
+
+      <div class="education-stat-takeaway reveal delay-2">
+        <span class="education-info-kicker mint">What these facts show</span>
+        <p>Bullying can happen in many places, both offline and online. But the numbers also show something important: speaking up matters. Whether someone talks to a trusted adult, supports a friend, or reports harmful behavior, small actions can help stop bullying from continuing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="education-action-section reveal" aria-labelledby="education-actions-heading">
+    <span class="education-info-kicker coral">So what can you do?</span>
+    <h2 id="education-actions-heading">Small safe steps can make a real difference.</h2>
+
+    <div class="education-action-grid">
+      <article class="education-action-card reveal delay-1">
+        <span class="education-action-number">01</span>
+        <h3>Talk to a trusted adult</h3>
+        <p>You do not have to handle it alone. Speak to someone who can help you stay safe and decide what to do next.</p>
+      </article>
+
+      <article class="education-action-card reveal delay-2">
+        <span class="education-action-number">02</span>
+        <h3>Block and report</h3>
+        <p>Use block, mute, and report tools instead of replying to harmful messages.</p>
+      </article>
+
+      <article class="education-action-card reveal delay-3">
+        <span class="education-action-number">03</span>
+        <h3>Save evidence</h3>
+        <p>Take screenshots and keep usernames, dates, and messages before deleting anything.</p>
+      </article>
+
+      <article class="education-action-card reveal delay-4">
+        <span class="education-action-number">04</span>
+        <h3>Stay supported</h3>
+        <p>Talk to a friend or trusted adult. Bullying is easier to face when you are not alone.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="education-myth-section reveal" aria-labelledby="education-myth-heading">
+    <span class="education-info-kicker lavender">Myth check</span>
+    <h2 id="education-myth-heading">Sometimes bullying is hidden behind excuses.</h2>
+    <p class="education-info-lead">Sometimes bullying is hidden behind excuses like "it was only a joke" or "just ignore it." But these ideas can make people feel unheard. Here are a few common myths - and the truth behind them.</p>
+
+    <div class="education-myth-grid">
+      <details class="education-myth-card reveal delay-1">
+        <summary>
+          <span class="education-myth-index">Myth 1</span>
+          <strong>"Bullying is just a joke."</strong>
+          <span class="education-myth-hint">Click to reveal truth</span>
+          <span class="education-myth-reflect"><strong>Reflect:</strong> Would this still feel funny if it happened to me or someone I care about?</span>
+        </summary>
+        <div class="education-myth-truth">
+          <span>Truth</span>
+          <p>A joke is only funny when everyone feels safe laughing. If someone feels embarrassed, targeted, afraid, or pressured to laugh along, it is not just a joke. Real humor does not need to hurt someone to entertain others.</p>
+        </div>
+      </details>
+
+      <details class="education-myth-card reveal delay-2">
+        <summary>
+          <span class="education-myth-index">Myth 2</span>
+          <strong>"Words do not hurt."</strong>
+          <span class="education-myth-hint">Click to reveal truth</span>
+          <span class="education-myth-reflect"><strong>Reflect:</strong> Before saying or posting something, ask: could this make someone feel small, unsafe, or alone?</span>
+        </summary>
+        <div class="education-myth-truth">
+          <span>Truth</span>
+          <p>Words can stay in someone's mind long after they are said or posted. Mean comments, insults, rumors, and repeated teasing can affect confidence, friendships, school life, and how safe someone feels.</p>
+        </div>
+      </details>
+
+      <details class="education-myth-card reveal delay-3">
+        <summary>
+          <span class="education-myth-index">Myth 3</span>
+          <strong>"Reporting makes things worse."</strong>
+          <span class="education-myth-hint">Click to reveal truth</span>
+          <span class="education-myth-reflect"><strong>Reflect:</strong> If someone was treating my friend this way, would I want them to stay silent or get support?</span>
+        </summary>
+        <div class="education-myth-truth">
+          <span>Truth</span>
+          <p>Reporting is not about creating drama. It is about getting help and stopping harmful behavior from continuing. A trusted adult, teacher, counselor, or platform report tool can help handle the situation more safely.</p>
+        </div>
+      </details>
+
+      <details class="education-myth-card reveal delay-4">
+        <summary>
+          <span class="education-myth-index">Myth 4</span>
+          <strong>"If they do not react, it does not bother them."</strong>
+          <span class="education-myth-hint">Click to reveal truth</span>
+          <span class="education-myth-reflect"><strong>Reflect:</strong> Could someone be hiding how much this affects them?</span>
+        </summary>
+        <div class="education-myth-truth">
+          <span>Truth</span>
+          <p>Not everyone shows when they are hurt. Some people stay quiet because they feel embarrassed, scared, or unsure what to do. Silence does not mean the bullying is okay.</p>
+        </div>
+      </details>
+
+      <details class="education-myth-card reveal delay-5">
+        <summary>
+          <span class="education-myth-index">Myth 5</span>
+          <strong>"It is not bullying if it happens online."</strong>
+          <span class="education-myth-hint">Click to reveal truth</span>
+          <span class="education-myth-reflect"><strong>Reflect:</strong> Would I say the same thing to someone's face, with a trusted adult watching?</span>
+        </summary>
+        <div class="education-myth-truth">
+          <span>Truth</span>
+          <p>Online bullying is still real. Messages, posts, screenshots, fake accounts, exclusion from group chats, and public embarrassment can follow someone even after school ends.</p>
+        </div>
+      </details>
+
+      <details class="education-myth-card reveal delay-6">
+        <summary>
+          <span class="education-myth-index">Myth 6</span>
+          <strong>"Helping someone will make me a target."</strong>
+          <span class="education-myth-hint">Click to reveal truth</span>
+          <span class="education-myth-reflect"><strong>Reflect:</strong> What is one safe way I could support someone without putting myself in danger?</span>
+        </summary>
+        <div class="education-myth-truth">
+          <span>Truth</span>
+          <p>Helping does not always mean confronting the bully directly. You can support someone privately, sit with them, report what happened, or tell a trusted adult. Small safe actions can make someone feel less alone.</p>
+        </div>
+      </details>
+    </div>
+
+    <p class="education-myth-ending">The truth is simple: bullying is not defined by the excuse behind it. It is defined by the impact it has on the person being targeted.</p>
+  </section>
+
+  <section class="education-reference-card reveal" aria-labelledby="education-reference-heading">
+    <span class="education-info-kicker lavender">Reference</span>
+    <h2 id="education-reference-heading">Sources used on this page</h2>
+    <p>This page currently uses these references for the added facts, statistics, and definition.</p>
+    <div class="education-reference-links">
+      <a class="education-reference-link" href="https://www.pacer.org/" target="_blank" rel="noopener noreferrer">www.pacer.org</a>
+      <a class="education-reference-link" href="https://www.healthdirect.gov.au/" target="_blank" rel="noopener noreferrer">www.healthdirect.gov.au</a>
+      <a class="education-reference-link" href="https://www.stopbullying.gov/" target="_blank" rel="noopener noreferrer">www.stopbullying.gov</a>
+      <a class="education-reference-link" href="https://www.unicef.org/" target="_blank" rel="noopener noreferrer">www.unicef.org</a>
+      <a class="education-reference-link" href="https://internetsafety101.org/" target="_blank" rel="noopener noreferrer">internetsafety101.org</a>
+    </div>
+  </section>
+</main>
+
+<a class="support-beacon" href="tools.html#urgent-help" aria-label="Go to urgent support">
+  <span class="support-beacon-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 8v4"></path>
+      <path d="M12 16h.01"></path>
+      <path d="M10.3 4.7 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 4.7a2 2 0 0 0-3.4 0Z"></path>
+    </svg>
+  </span>
+  <span class="support-beacon-copy">
+    <strong>Need help?</strong>
+    <small>Open support</small>
+  </span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
