@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from flask import Flask, jsonify, request, send_from_directory
-
+from flask_cors import CORS
 from predict import predict_text
 
 
@@ -14,7 +14,7 @@ STATIC_FILES = {
 
 app = Flask(__name__)
 
-
+CORS(app, resources={r"/analyze": {"origins": "*"}})
 def serve_file(filename: str):
     return send_from_directory(BASE_DIR, filename)
 
