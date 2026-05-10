@@ -8,4 +8,4 @@ window.theLightVaultFirebaseConfig = {
   measurementId: "G-WM2FMP4CPX"
 };
 
-window.theLightVaultActionUrl = "";
+window.theLightVaultActionUrl = "https://eduwcyber.github.io/TheLight/tools.html#vault";
