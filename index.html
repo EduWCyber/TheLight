@@ -1,0 +1,296 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Light</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="landing-page">
+
+<div class="light"></div>
+<div class="page-glow page-glow-one"></div>
+<div class="page-glow page-glow-two"></div>
+
+<nav class="navbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">
+      <img src="LoGo.png" alt="The Light logo">
+    </span>
+    <span class="brand-text">
+      <strong>The Light</strong>
+      <small>St. Andrew's School</small>
+    </span>
+  </a>
+
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-links" id="site-menu">
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="tools.html">Tools</a>
+  </div>
+  <a class="nav-cta" href="tools.html#report">Get Support</a>
+</nav>
+
+<main>
+  <section class="hero section-shell">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Student-led anti-cyberbullying initiative</span>
+      <h1 class="title-stack">
+        <span class="title-box">THE LIGHT</span>
+        <span class="subtitle-box">Over Cyberbullying</span>
+      </h1>
+      <p class="hero-subtitle">
+        Helping young people recognize harmful behavior, stay protected online, and build a kinder digital future.
+      </p>
+
+      <div class="hero-credits">
+        <p>Presented by <strong>The Light</strong></p>
+        <p><strong>St. Andrew's School</strong></p>
+      </div>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="tools.html#analyzer">Try Analyzer</a>
+        <a class="button button-secondary" href="#why">Learn More</a>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust-chip">
+          <span class="chip-dot chip-safe"></span>
+          Private by design
+        </div>
+        <div class="trust-chip">
+          <span class="chip-dot chip-warning"></span>
+          Built for teens
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal delay-1">
+      <div class="phone-mockup">
+        <div class="phone-top">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="chat-card">
+          <div class="chat-label">Incoming message</div>
+          <div class="chat-bubble harmful">"Nobody likes you"</div>
+          <div class="mockup-meta">
+            <div class="meta-card">
+              <span class="meta-title">Toxicity Score</span>
+              <strong>89%</strong>
+            </div>
+            <div class="meta-card alert">
+              <span class="meta-title">Status</span>
+              <strong>Harmful</strong>
+            </div>
+          </div>
+          <div class="mockup-footer">
+            <span class="mini-pill">Detected insult</span>
+            <span class="mini-pill">High-risk tone</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell reveal">
+    <div class="section-heading">
+      <span class="eyebrow">What this project does</span>
+      <h2>Fast clarity when a message feels off</h2>
+      <p>Simple tools that help you understand tone, spot patterns, and respond with more confidence.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v7A2.5 2.5 0 0 1 17.5 15H13l-4.8 4.1c-.8.7-2.2.1-2.2-.9V15.8A2.5 2.5 0 0 1 4 13.5z"/>
+          </svg>
+        </div>
+        <h3>AI Message Scanner</h3>
+        <p>Checks tone, insults, and manipulation cues so you can see what the message is really doing.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon-wrap purple">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3 4 7v5c0 5 3.4 8.8 8 10 4.6-1.2 8-5 8-10V7z"/>
+            <path d="M9 12.2 11.2 14 15.3 9.8"/>
+          </svg>
+        </div>
+        <h3>Smart Reply Generator</h3>
+        <p>Suggests calmer, safer responses when you want to set a boundary without escalating the situation.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon-wrap blue">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3 5 6.5V12c0 4.6 2.9 7.9 7 9 4.1-1.1 7-4.4 7-9V6.5z"/>
+            <path d="M9 9h6M9 12h6M9 15h3"/>
+          </svg>
+        </div>
+        <h3>Detect Red Flags</h3>
+        <p>Highlights patterns like exclusion, threats, repeated mocking, and guilt-driven language.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon-wrap green">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 20c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8Z"/>
+            <path d="M9 13.2 11.3 15 15.5 10.5"/>
+          </svg>
+        </div>
+        <h3>Confidence Boost</h3>
+        <p>Turns confusing messages into clearer guidance so you can act with more confidence and less self-doubt.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-shell reveal">
+    <div class="section-heading">
+      <span class="eyebrow">Project pillars</span>
+      <h2>The four core parts of the platform</h2>
+      <p>These are the main building blocks that shape how the project supports awareness, safety, and action.</p>
+    </div>
+
+    <div class="feature-grid">
+      <a class="feature-link" href="education.html">
+        <article class="feature-card">
+          <h3>Education</h3>
+          <p>Clear and detailed explanations of bullying and cyberbullying to build awareness and understanding.</p>
+        </article>
+      </a>
+
+      <a class="feature-link" href="tools.html#analyzer">
+        <article class="feature-card">
+          <h3>Smart Detection</h3>
+          <p>A text analyzer that identifies harmful language and highlights potential bullying behavior.</p>
+        </article>
+      </a>
+
+      <a class="feature-link" href="tools.html#vault">
+        <article class="feature-card">
+          <h3>Safe Vault</h3>
+          <p>A secure space where detected messages are stored as evidence for future reference.</p>
+        </article>
+      </a>
+
+      <a class="feature-link" href="tools.html#report">
+        <article class="feature-card">
+          <h3>Report System</h3>
+          <p>A structured reporting system that allows users to safely report bullying incidents.</p>
+        </article>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-shell stats-strip-section" id="why">
+    <div class="section-heading stats-strip-heading">
+      <span class="eyebrow reveal">Teen digital safety</span>
+      <h2 class="reveal delay-1">Why It Matters</h2>
+      <p class="reveal delay-2">Cyberbullying moves fast. Support should too.</p>
+    </div>
+
+    <div class="stats-strip" aria-label="Key cyberbullying facts">
+      <article class="stat-strip-card reveal delay-2">
+        <span class="stat-strip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 6v6l4 2"></path>
+            <path d="M21 12a9 9 0 1 1-9-9"></path>
+          </svg>
+        </span>
+        <strong class="stat-strip-value" data-target="24/7">0</strong>
+        <h3>Always-online pressure</h3>
+        <p>Digital harm can continue beyond school hours and appear unexpectedly.</p>
+      </article>
+
+      <article class="stat-strip-card reveal delay-3">
+        <span class="stat-strip-icon purple" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M7 12h10"></path>
+            <path d="m13 8 4 4-4 4"></path>
+            <path d="M5 6h6a4 4 0 0 1 4 4"></path>
+          </svg>
+        </span>
+        <strong class="stat-strip-value" data-target="1 Tap">0</strong>
+        <h3>Messages spread instantly</h3>
+        <p>One screenshot or repost can amplify harm within seconds.</p>
+      </article>
+
+      <article class="stat-strip-card reveal delay-4">
+        <span class="stat-strip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M5 12h4l2 4 3-8 2 4h3"></path>
+          </svg>
+        </span>
+        <strong class="stat-strip-value" data-target="3 Steps">0</strong>
+        <h3>Notice. Understand. Respond.</h3>
+        <p>Better outcomes begin when teens recognize harmful tone and choose safer responses.</p>
+      </article>
+
+      <article class="stat-strip-card reveal delay-5">
+        <span class="stat-strip-icon purple" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3 4 7v5c0 5 3.4 8.6 8 9 4.6-.4 8-4 8-9V7l-8-4Z"></path>
+            <path d="m9.5 12 1.7 1.7 3.3-3.7"></path>
+          </svg>
+        </span>
+        <strong class="stat-strip-value" data-target="0 Shame">0</strong>
+        <h3>Support should feel safe</h3>
+        <p>Private tools help users reflect, save evidence, and seek help safely.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <strong>The Light</strong>
+    <p>Student Innovation Project</p>
+  </div>
+  <div>
+    <strong>Privacy Focused</strong>
+    <p>Built to encourage safer reflection before sharing or reporting.</p>
+  </div>
+  <div>
+    <strong>Contact Info</strong>
+    <p>eduworld.mu@gmail.com</p>
+  </div>
+</footer>
+
+<a class="support-beacon" href="tools.html#report" aria-label="Go to support form">
+  <span class="support-beacon-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 8v4"></path>
+      <path d="M12 16h.01"></path>
+      <path d="M10.3 4.7 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 4.7a2 2 0 0 0-3.4 0Z"></path>
+    </svg>
+  </span>
+  <span class="support-beacon-copy">
+    <strong>Need help?</strong>
+    <small>Open support</small>
+  </span>
+</a>
+
+<a class="back-to-top" href="#" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="m6 15 6-6 6 6"></path>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+
