@@ -1,10 +1,11 @@
 window.theLightVaultFirebaseConfig = {
-  apiKey: "PASTE_FIREBASE_API_KEY",
-  authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
-  projectId: "PASTE_PROJECT_ID",
-  storageBucket: "PASTE_PROJECT_ID.appspot.com",
-  messagingSenderId: "PASTE_MESSAGING_SENDER_ID",
-  appId: "PASTE_FIREBASE_APP_ID"
+  apiKey: "AIzaSyBxy1LSv0KSxszTbaQyhCobdnRBPrlTuE0",
+  authDomain: "vault-database-bd9bd.firebaseapp.com",
+  projectId: "vault-database-bd9bd",
+  storageBucket: "vault-database-bd9bd.firebasestorage.app",
+  messagingSenderId: "618482359332",
+  appId: "1:618482359332:web:17af3741755e133b8f0cb1",
+  measurementId: "G-WM2FMP4CPX"
 };
 
 window.theLightVaultActionUrl = "";
