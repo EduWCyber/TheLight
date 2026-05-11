@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="analyzer-api-url" content="https://thelight-rh8n.onrender.com/analyze">
+<meta name="hand-analyzer-api-url" content="https://thelight-rh8n.onrender.com/analyze-hand">
+<title>The Light Tools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tools-page">
+
+<div class="light"></div>
+<div class="page-glow page-glow-one"></div>
+<div class="page-glow page-glow-two"></div>
+<div class="tools-particles" aria-hidden="true"></div>
+
+<nav class="navbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">
+      <img src="LoGo.png" alt="The Light logo">
+    </span>
+    <span class="brand-text">
+      <strong>The Light</strong>
+      <small>St. Andrew's School</small>
+    </span>
+  </a>
+
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-links" id="site-menu">
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="tools.html">Tools</a>
+  </div>
+  <a class="nav-cta" href="#report">Get Support</a>
+</nav>
+
+<main class="tools-main">
+  <section class="tools-hero section-shell" id="overview">
+    <div class="tools-hero-copy reveal">
+      <span class="eyebrow">AI-powered safety workspace</span>
+      <h1>AI Safety Tools</h1>
+      <p class="tools-hero-subtitle">Analyze messages with the deployed model, understand risks, and respond smarter online.</p>
+
+      <div class="tools-hero-actions">
+        <a class="button button-primary" href="#analyzer">Start Analyzing</a>
+        <a class="button button-secondary" href="#mini-tools">Explore Mini Tools</a>
+      </div>
+
+      <div class="tools-status-row">
+        <div class="tools-status-chip">
+          <span class="chip-dot chip-safe"></span>
+          Privacy-first guidance
+        </div>
+        <div class="tools-status-chip">
+          <span class="chip-dot chip-warning"></span>
+          Built for fast support
+        </div>
+      </div>
+    </div>
+
+    <div class="tools-hero-console reveal delay-2">
+      <div class="tools-console-top">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="tools-console-card">
+        <span class="tools-console-label">Live AI monitor</span>
+        <strong>Message risk review ready</strong>
+        <div class="tools-console-metrics">
+          <div class="tools-console-metric">
+            <span>Suggested tone</span>
+            <strong>Calm, firm</strong>
+          </div>
+          <div class="tools-console-metric">
+            <span>Detection mode</span>
+            <strong>Insult + exclusion</strong>
+          </div>
+        </div>
+        <div class="tools-console-wave">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-analyzer-section reveal" id="analyzer">
+    <div class="tools-analyzer-shell">
+      <div class="tools-analyzer-panel">
+        <div class="tools-panel-heading">
+          <span class="eyebrow">Message Analyzer</span>
+          <h2>Check the tone before it hits harder.</h2>
+          <p>Paste a message below and get a quick risk view, clearer context, and a safer response suggestion.</p>
+        </div>
+
+        <label class="tools-input-label" for="toolsInput">Message Analyzer</label>
+        <textarea id="toolsInput" class="tools-textarea" placeholder="Paste a message here...">Nobody likes you. Stop talking in our group chat.</textarea>
+
+        <div class="tools-action-row">
+          <button class="button button-primary" id="toolsAnalyzeButton" type="button">Analyze Message</button>
+          <button class="button button-secondary" id="toolsSampleButton" type="button">Load Sample</button>
+        </div>
+      </div>
+
+      <aside class="tools-results-panel">
+        <div class="tools-results-head">
+          <span class="tools-results-kicker">Results panel</span>
+          <strong id="toolsStatus">Harmful</strong>
+        </div>
+
+        <div class="tools-score-card">
+          <div class="progress-copy">
+            <span>Toxicity Score</span>
+            <strong id="toolsScore" data-value="0">0%</strong>
+          </div>
+          <div class="progress-copy">
+            <span>Certainty</span>
+            <strong id="toolsScoreConfidence">0%</strong>
+          </div>
+          <div class="progress-track tools-progress-track">
+            <div class="progress-fill harmful" id="toolsBar" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="tools-results-grid">
+          <div class="signal-card">
+            <span class="signal-label">Status</span>
+            <strong id="toolsStatusDetail">Harmful</strong>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">Tone Detected</span>
+            <strong id="toolsTone">Insult / Exclusion</strong>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">Confidence Level</span>
+            <strong id="toolsConfidence">0%</strong>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">Suggested Response</span>
+            <strong id="toolsResponse">I'm not continuing this conversation.</strong>
+          </div>
+        </div>
+
+        <p class="tools-results-note" id="toolsInsight">This message contains exclusionary and insulting language, so a brief boundary-setting response is safer than arguing back.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="hand-analyzer-section section-shell reveal delay-1" id="hand-analyzer">
+    <div class="hand-analyzer-shell">
+      <div class="hand-analyzer-copy">
+        <span class="eyebrow">Hand Analyzer</span>
+        <h2>Hand signal detection for safer reporting.</h2>
+        <p>Use your webcam to check whether the visible hand is idle or in a punch state.</p>
+      </div>
+
+      <aside class="hand-analyzer-panel">
+        <div class="tools-results-head">
+          <span class="tools-results-kicker">Live camera status</span>
+          <strong class="ready" id="handAnalyzerStatus">Camera ready</strong>
+        </div>
+
+        <div class="hand-camera-frame">
+          <video id="handAnalyzerVideo" playsinline muted></video>
+          <canvas id="handAnalyzerCanvas"></canvas>
+          <div class="hand-camera-placeholder" id="handAnalyzerPlaceholder">Start the camera to scan your hand.</div>
+        </div>
+
+        <div class="hand-prediction-grid">
+          <div class="signal-card">
+            <span class="signal-label">Detected State</span>
+            <strong id="handAnalyzerLabel">Waiting</strong>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">Confidence</span>
+            <strong id="handAnalyzerConfidence">0%</strong>
+          </div>
+        </div>
+
+        <p class="tools-results-note" id="handAnalyzerInsight">The webcam stays in your browser. Only hand landmarks are sent to the Render hand model.</p>
+
+        <div class="tools-action-row hand-action-row">
+          <button class="button button-primary" id="handCameraStartButton" type="button">Start Camera</button>
+          <button class="button button-secondary" id="handCameraStopButton" type="button" disabled>Stop Camera</button>
+          <button class="button button-secondary" id="handBackendCheckButton" type="button">Check Backend</button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="safe-vault-shell section-shell reveal delay-1" id="vault">
+    <div class="safe-vault-hero">
+      <div class="safe-vault-hero-copy">
+        <span class="eyebrow">Private evidence space</span>
+        <h2>Safe Vault</h2>
+        <p>Save important notes about harmful messages in a private account protected by email sign-in.</p>
+        <div class="tools-status-row">
+          <div class="tools-status-chip">
+            <span class="chip-dot chip-safe"></span>
+            Email-only access
+          </div>
+          <div class="tools-status-chip">
+            <span class="chip-dot chip-warning"></span>
+            Firestore database ready
+          </div>
+        </div>
+      </div>
+
+      <aside class="safe-vault-status-card">
+        <span>Vault status</span>
+        <strong id="vaultMessage" data-type="info">Waiting for Firebase setup</strong>
+        <p>Only this Tools page section loads the vault login and database connection.</p>
+        <button class="safe-vault-help-button" id="vaultHelpButton" type="button" aria-expanded="false" aria-controls="vaultHelpPanel">Need help signing in?</button>
+      </aside>
+    </div>
+
+    <div class="safe-vault-help-panel" id="vaultHelpPanel" hidden>
+      <div>
+        <span class="eyebrow">Vault help</span>
+        <h3>How to unlock your vault</h3>
+      </div>
+      <ol>
+        <li>Enter the email address you want to use for the vault.</li>
+        <li>Click Send Secure Link once, then wait for the email.</li>
+        <li>Check your inbox, spam, junk, promotions, or school email filters.</li>
+        <li>Open the link from the same device or browser when possible.</li>
+        <li>If the link expires, return here and request a new one after the cooldown.</li>
+      </ol>
+    </div>
+
+    <div class="safe-vault-auth-panel" id="vaultAuthPanel">
+      <div class="tools-panel-heading">
+        <span class="eyebrow">Sign in</span>
+        <h2>Unlock with your email.</h2>
+        <p>Enter your email and Firebase will send a secure link. Open the link to access your vault.</p>
+      </div>
+
+      <form class="safe-vault-form" id="vaultAuthForm">
+        <label class="tools-input-label" for="vaultEmail">Email address</label>
+        <input id="vaultEmail" name="email" class="safe-vault-input" type="email" autocomplete="email" placeholder="you@example.com" maxlength="120" required>
+        <button class="button button-primary" id="vaultSendLink" type="submit">Send Secure Link</button>
+      </form>
+    </div>
+
+    <div class="safe-vault-app-panel" id="vaultAppPanel" hidden>
+      <div class="safe-vault-app-head">
+        <div>
+          <span class="eyebrow">Unlocked vault</span>
+          <h2>Your saved evidence</h2>
+          <p id="vaultUserEmail"></p>
+        </div>
+        <button class="button button-secondary" id="vaultSignOut" type="button">Sign Out</button>
+      </div>
+
+      <div class="safe-vault-grid">
+        <form class="safe-vault-form safe-vault-evidence-form" id="vaultEvidenceForm">
+          <div class="safe-vault-field-grid">
+            <div>
+              <label class="tools-input-label" for="vaultTitle">Evidence title</label>
+              <input id="vaultTitle" name="title" class="safe-vault-input" type="text" placeholder="Group chat insult" maxlength="120" required>
+            </div>
+            <div>
+              <label class="tools-input-label" for="vaultDate">Date</label>
+              <input id="vaultDate" name="incidentDate" class="safe-vault-input" type="date">
+            </div>
+            <div>
+              <label class="tools-input-label" for="vaultPlatform">Platform</label>
+              <input id="vaultPlatform" name="platform" class="safe-vault-input" type="text" placeholder="Instagram, WhatsApp, Discord" maxlength="80">
+            </div>
+            <div>
+              <label class="tools-input-label" for="vaultAccount">Account or username</label>
+              <input id="vaultAccount" name="account" class="safe-vault-input" type="text" placeholder="@username" maxlength="80">
+            </div>
+          </div>
+
+          <label class="tools-input-label" for="vaultNotes">Evidence notes</label>
+          <textarea id="vaultNotes" name="notes" class="tools-textarea safe-vault-textarea" placeholder="Write what happened, where it happened, and where screenshots are saved." maxlength="2000" required></textarea>
+
+          <button class="button button-primary" id="vaultSubmitEvidence" type="submit">Save Evidence</button>
+        </form>
+
+        <div class="safe-vault-list-panel">
+          <div class="safe-vault-list-head">
+            <span class="eyebrow">Saved notes</span>
+            <p>Use clear titles and dates so reports are easier to explain later.</p>
+          </div>
+          <p class="safe-vault-empty" id="vaultEmpty">No evidence saved yet.</p>
+          <div class="safe-vault-list" id="vaultList"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-mini-section section-shell" id="mini-tools">
+    <div class="section-heading tools-section-heading">
+      <span class="eyebrow reveal">Quick actions</span>
+      <h2 class="reveal delay-1">Mini tools for safer next steps</h2>
+      <p class="reveal delay-2">Shortcuts for rewriting, tone checks, documenting evidence, and reporting abuse clearly.</p>
+    </div>
+
+    <div class="tools-grid">
+      <article class="tools-card reveal delay-2">
+        <span class="tools-card-icon blue" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 20h9"></path>
+            <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+          </svg>
+        </span>
+        <h3>Rewrite Message Politely</h3>
+        <p>Turns rude messages into respectful ones.</p>
+        <button class="tools-inline-button" type="button" data-tool-action="rewrite">Show Example</button>
+        <div class="tools-card-output" id="toolOutputRewrite">"Can we talk about this respectfully instead?"</div>
+      </article>
+
+      <article class="tools-card reveal delay-3">
+        <span class="tools-card-icon purple" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3v18"></path>
+            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+          </svg>
+        </span>
+        <h3>Detect Tone</h3>
+        <p>Examples: Angry, Sarcastic, Supportive.</p>
+        <button class="tools-inline-button" type="button" data-tool-action="tone">Show Example</button>
+        <div class="tools-card-output" id="toolOutputTone">Detected tone: angry, dismissive, and isolating.</div>
+      </article>
+
+      <article class="tools-card reveal delay-4">
+        <span class="tools-card-icon green" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 11l3 3L22 4"></path>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+          </svg>
+        </span>
+        <h3>Safe Vault</h3>
+        <p>Open a private email-protected space for evidence notes.</p>
+        <a class="tools-inline-button" href="#vault">Open Safe Vault</a>
+        <button class="tools-inline-button" type="button" data-tool-action="evidence">Show Steps</button>
+        <div class="tools-card-output" id="toolOutputEvidence">Take screenshots, save usernames, note dates, and keep copies somewhere private.</div>
+      </article>
+
+      <article class="tools-card reveal delay-5">
+        <span class="tools-card-icon coral" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 8v4"></path>
+            <path d="M12 16h.01"></path>
+            <path d="M10.3 4.7 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 4.7a2 2 0 0 0-3.4 0Z"></path>
+          </svg>
+        </span>
+        <h3>Report Abuse Tips</h3>
+        <p>How to block/report harmful behavior.</p>
+        <button class="tools-inline-button" type="button" data-tool-action="report">Show Tips</button>
+        <div class="tools-card-output" id="toolOutputReport">Block the account, report the content in-app, and share saved evidence with a trusted adult or school staff member.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="tools-steps section-shell" id="steps">
+    <div class="section-heading tools-section-heading">
+      <span class="eyebrow reveal">How it works</span>
+      <h2 class="reveal delay-1">Fast guidance in three steps</h2>
+    </div>
+
+    <div class="tools-step-grid">
+      <article class="tools-step-card reveal delay-2">
+        <span class="tools-step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 6h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 18h10"></path>
+          </svg>
+        </span>
+        <h3>Enter text</h3>
+        <p>Paste a message, comment, or DM that feels concerning.</p>
+      </article>
+
+      <article class="tools-step-card reveal delay-3">
+        <span class="tools-step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 19h16"></path>
+            <path d="M7 16V8"></path>
+            <path d="M12 16V5"></path>
+            <path d="M17 16v-3"></path>
+          </svg>
+        </span>
+        <h3>AI checks language patterns</h3>
+        <p>It reviews tone, harmful cues, and likely risk level.</p>
+      </article>
+
+      <article class="tools-step-card reveal delay-4">
+        <span class="tools-step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="m5 12 4 4L19 6"></path>
+          </svg>
+        </span>
+        <h3>Get guidance instantly</h3>
+        <p>See risk signals and a safer response suggestion right away.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tools-support-section reveal" id="report">
+    <div class="tools-support-shell">
+      <div class="tools-support-copy">
+        <span class="eyebrow">Urgent support</span>
+        <h2>Report harm or ask for help quickly.</h2>
+        <p>If something feels serious, use this space to write what happened, who was involved, and what kind of support you need.</p>
+
+        <div class="tools-support-notes">
+          <div class="tools-support-note">
+            <span class="tools-support-dot amber"></span>
+            Short, clear details are enough.
+          </div>
+          <div class="tools-support-note">
+            <span class="tools-support-dot red"></span>
+            Attach screenshots or save them separately as evidence.
+          </div>
+        </div>
+      </div>
+
+      <div class="tools-support-panel">
+        <form id="supportForm" class="support-form" action="https://formspree.io/f/xbdpgoda" method="POST" enctype="multipart/form-data">
+          <div class="tools-support-form-grid">
+            <div class="tools-support-field">
+              <label class="tools-input-label" for="urgentHelpName">Name</label>
+              <input id="urgentHelpName" name="name" type="text" placeholder="Your name" required>
+            </div>
+
+            <div class="tools-support-field">
+              <label class="tools-input-label" for="urgentHelpEmail">Email</label>
+              <input id="urgentHelpEmail" name="email" type="email" placeholder="Your email" required>
+            </div>
+          </div>
+
+          <label class="tools-input-label" for="urgentHelpMessage">Description</label>
+          <textarea id="urgentHelpMessage" name="message" class="tools-textarea tools-support-textarea" placeholder="Describe what happened, when it happened, and what support you need..." required></textarea>
+          <div class="tools-screenshot-field">
+            <label class="tools-screenshot-button" for="urgentHelpScreenshots">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7a2 2 0 0 1 2-2h2l1.5-2h5L16 5h2a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Add screenshots
+            </label>
+            <input id="urgentHelpScreenshots" name="screenshots" type="file" accept="image/*" multiple>
+            <span id="screenshotFileStatus">No screenshots selected</span>
+          </div>
+          <p class="tools-support-status" id="supportFormStatus" role="status" aria-live="polite"></p>
+          <div class="tools-action-row">
+            <button class="button tools-support-button" id="supportSubmitButton" type="submit">Request Support</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-trust-banner reveal delay-2">
+    <p>Built for awareness. Designed for privacy. Made for safer spaces.</p>
+  </section>
+</main>
+
+<footer class="site-footer tools-footer">
+  <div>
+    <strong>AI Safety Tools</strong>
+    <p>Designed to make digital harm easier to notice and respond to calmly.</p>
+  </div>
+  <div>
+    <strong>Student-focused</strong>
+    <p>Clear guidance, private reflection, and practical next steps for teens.</p>
+  </div>
+  <div>
+    <strong>Fast support</strong>
+    <p>From message analysis to reporting tips, everything stays in one place.</p>
+  </div>
+</footer>
+
+<a class="support-beacon" href="#report" aria-label="Jump to support form">
+  <span class="support-beacon-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 8v4"></path>
+      <path d="M12 16h.01"></path>
+      <path d="M10.3 4.7 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 4.7a2 2 0 0 0-3.4 0Z"></path>
+    </svg>
+  </span>
+  <span class="support-beacon-copy">
+    <strong>Need help?</strong>
+    <small>Open support</small>
+  </span>
+</a>
+
+<a class="back-to-top" href="#" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="m6 15 6-6 6 6"></path>
+  </svg>
+</a>
+
+<nav class="section-rail" aria-label="Tools page sections">
+  <button class="section-rail-toggle" type="button" aria-expanded="false" aria-controls="toolsSectionRail">
+    <span></span>
+    Sections
+  </button>
+  <div class="section-rail-links" id="toolsSectionRail">
+    <a href="#overview" data-section-link="overview">Overview</a>
+    <a href="#analyzer" data-section-link="analyzer">Analyzer</a>
+    <a href="#hand-analyzer" data-section-link="hand-analyzer">Hand AI</a>
+    <a href="#vault" data-section-link="vault">Vault</a>
+    <a href="#mini-tools" data-section-link="mini-tools">Mini tools</a>
+    <a href="#steps" data-section-link="steps">Steps</a>
+    <a href="#report" data-section-link="report">Report</a>
+  </div>
+</nav>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="safe-vault.config.js"></script>
+<script src="safe-vault.js"></script>
+</body>
+</html>
