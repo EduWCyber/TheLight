@@ -225,6 +225,12 @@ async function initSafeVault() {
   let currentUser = null;
   let unsubscribeVault = null;
 
+  try {
+    await firebase.setPersistence(auth, firebase.browserSessionPersistence);
+  } catch (error) {
+    setVaultMessage("Vault session mode could not be enabled. Please sign out before leaving this device.", "warning");
+    console.error("Vault persistence error:", error);
+  }
   if (firebase.isSignInWithEmailLink(auth, window.location.href)) {
     let email = window.localStorage.getItem(EMAIL_STORAGE_KEY);
 
